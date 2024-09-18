@@ -1,0 +1,33 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Arial, Helvetica, sans-serif;
+}
+
+.galeria {
+    display: flex; /*definir conteiner flexivel, permite os itens, permite os itens se alinharem*/
+    flex-wrap: wrap; /* permitir os itens se mover conforme espaço insuficiente*/
+    gap: 20px; /* define o espaço entre os itens da galeria */
+    justify-content: center; /* alinha os itens do container horizontalmente */
+    padding: 20px;
+    box-sizing: border-box; /* incluir preenchimento do calculo da largura do container */
+}
+
+.galeria-item {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.galeria-item img {
+    width: 100%;
+    height: auto;
+    display: block; /* remover o espaço abaixo da imagem*/
+    border-radius: 15px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.galeria-item img:hover {
+    transform: scale(1.05); /* aumenta a imagem em 5% quando passa o mouse*/
+
+}
