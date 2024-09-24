@@ -1,0 +1,35 @@
+.container {
+    width: 90%;
+    margin: 0 auto;
+}
+
+header, footer {
+    background-color:  black;
+    color: white;
+    padding: 10px;
+    text-align: center;
+}
+
+main {
+    padding: 20px;
+    background-color: azure;
+}
+
+@media (max-width: 600px) {
+    main {
+        font-size: 1em;
+    }
+
+    header, footer {
+        padding: 3px;
+    }
+}
+
+/*mediaQuerie aplicando estilizando quando a tela estiver com o minimo de 601px */
+@media (min-width: 601px) {
+    main {
+        font-size: 2em;
+        color: red;
+    }
+}
+

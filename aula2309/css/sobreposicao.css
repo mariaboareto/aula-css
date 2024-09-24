@@ -1,0 +1,48 @@
+.container {
+    position: relative; /* definindo que o container permite elementos posicionados absolutamente*/
+    width: 600px; /* definindo a largura do meu container para 600px */
+    height: 400px; /* definindo a altura do meu container para 600px */
+}
+
+.cotainer img {
+    width: 100%; /* a imagem preenche toda largura do container */
+    height: auto; /* mantem a proporção da imagem ao ajustar a altura automaticamente */
+}
+
+.mensagemSobreposta {
+    position: absolute; 
+    top: 0; /* resetando meu left para ficar no limite do topo */
+    left: 0; /* resetando meu left para ficar o limite esquerdo */
+    width: 100%; /* ocupar toda largura do ontainer */
+    height: 100%; /* ocupar toda altura do container */
+    background-color: rgba(0, 0, 0, 0.5); /* define a cor preta com uma opacidade de 50% */
+    color: #fff; /* define cor branca ao escrito */
+    display: flex; /* usa flexbox para organizar o conteudo dentro da div mensagemSobreposta */
+    align-items: center; /* alinha conteudo verticalmente */
+    justify-content: center; /* alinha contedo horizontalmente */
+    font-size: 24px; /* define tamanho da fonte */
+    z-index: 1; /* sobrepondo camada 1 */
+    transition: opacity 0.5s ease; /* aplicando transição na opacidade para o hover suavizar */
+}
+
+.container:hover .mensagemSobreposta {
+    opacity: 0; /* aplicando opacidade 0% (vai sumir) */
+}
+
+@media (max-width: 600px) {
+    body{
+        background-color: blueviolet;
+    }
+}
+
+@media (min-width: 601px) and (max-width: 1200px){
+    body{
+        background-color: blue;
+    }
+}
+
+@media (min-width: 1201px){
+    body{
+        background-color: aquamarine;
+    }
+}
